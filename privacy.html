@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Tisha Resort Agra</title>
+    <meta name="description" content="Privacy Policy for Tisha Resort & Banquet, Agra. Learn how we collect, use, and protect your personal information when you use our website or services.">
+    <link rel="canonical" href="https://tisharesort.com/privacy.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={theme:{extend:{colors:{navy:{DEFAULT:'#0F172A',50:'#F8FAFC',100:'#F1F5F9',200:'#E2E8F0',300:'#CBD5E1',400:'#94A3B8',500:'#64748B',600:'#475569',700:'#334155',800:'#1E293B',900:'#0F172A',950:'#020617'},gold:{DEFAULT:'#C8A96B',50:'#FCFAF5',100:'#FAF4E8',200:'#F3E5CD',300:'#EAD1A6',400:'#DDBD80',500:'#C8A96B',600:'#B29153',700:'#91723B',800:'#705427',900:'#4F3818'},champagne:{DEFAULT:'#F5F0E8',50:'#FDFCFB',100:'#FAF8F4',200:'#F5F0E8',300:'#EDE4D6',400:'#E1D3BF',500:'#C8B296',600:'#AA9072',700:'#8C7053',800:'#6D5239',900:'#4E3A28'}},fontFamily:{serif:['Playfair Display','serif'],sans:['Inter','sans-serif']},animation:{'fade-in-up':'fadeInUp 0.8s ease-out forwards','fade-in':'fadeIn 1s ease-out forwards'},keyframes:{fadeInUp:{'0%':{opacity:'0',transform:'translateY(30px)'},'100%':{opacity:'1',transform:'translateY(0)'}},fadeIn:{'0%':{opacity:'0'},'100%':{opacity:'1'}}}}}}
+    </script>
+    <style>
+        .gold-gradient-bg{background:linear-gradient(135deg,#EAD1A6 0%,#C8A96B 50%,#91723B 100%)}
+        .reveal-element{opacity:0;transform:translateY(40px);transition:all 1s cubic-bezier(0.16,1,0.3,1)}.reveal-element.active{opacity:1;transform:translateY(0)}
+        ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#0F172A}::-webkit-scrollbar-thumb{background:#C8A96B;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#B29153}
+    </style>
+</head>
+<body class="bg-white text-navy font-sans antialiased overflow-x-hidden">
+
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 gold-gradient-bg z-50 transition-all duration-100" style="width:0%"></div>
+
+    <header class="bg-navy py-4 px-4 md:px-12 shadow-xl sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group"><img src="tisha_logo.jpeg" alt="Tisha Resort Logo" class="h-12 md:h-14 rounded-sm"></a>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Home</a>
+                <a href="index.html#venues" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Venues</a>
+                <a href="index.html#weddings" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Weddings</a>
+                <a href="index.html#events" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Events</a>
+                <a href="gallery.html" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Gallery</a>
+                <a href="about.html" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">About</a>
+                <a href="index.html#contact" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Contact</a>
+            </nav>
+            <div class="hidden lg:block"><a href="index.html#contact" class="gold-gradient-bg hover:opacity-90 text-navy font-bold px-6 py-2.5 rounded-sm shadow-lg tracking-widest text-xs uppercase transition-all duration-300 hover:-translate-y-0.5">Enquire Now</a></div>
+            <button id="menu-btn" aria-label="Toggle menu" class="lg:hidden text-white hover:text-gold transition-colors focus:outline-none z-50"><i class="fa-solid fa-bars text-2xl" id="menu-icon"></i></button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-navy bg-opacity-95 lg:hidden flex flex-col justify-center items-center text-center space-y-6 opacity-0 pointer-events-none transition-all duration-300 z-40">
+            <img src="tisha_logo.jpeg" alt="Tisha Resort" class="h-16 mb-4 rounded-sm">
+            <a href="index.html" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Home</a>
+            <a href="index.html#venues" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Venues</a>
+            <a href="gallery.html" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Gallery</a>
+            <a href="about.html" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">About</a>
+            <a href="index.html#contact" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Contact</a>
+            <a href="index.html#contact" class="gold-gradient-bg text-navy font-bold px-8 py-3 rounded-sm shadow-xl tracking-widest text-sm uppercase mt-4">Enquire Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative py-24 md:py-32 bg-navy text-white overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image:url('image/IMG_20260617_202557.jpg')"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-navy-950 to-navy z-0"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 px-4">
+            <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">Privacy Policy</h1>
+            <div class="w-24 h-1 gold-gradient-bg mx-auto mb-4"></div>
+            <nav class="text-sm text-slate-400">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gold">Privacy Policy</span>
+            </nav>
+            <p class="text-xs text-slate-500 mt-4">Last Updated: July 2026</p>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="py-16 md:py-24 px-4">
+        <div class="max-w-4xl mx-auto">
+            <div class="prose prose-slate max-w-none space-y-10">
+
+                <div class="reveal-element">
+                    <p class="text-slate-600 leading-relaxed text-sm md:text-base">At Tisha Resort & Banquet ("we," "us," or "our"), we are committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you visit our website or interact with our services.</p>
+                </div>
+
+                <div class="reveal-element bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-100">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">1</span> Information We Collect</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">When you submit an inquiry through our website, we may collect the following personal information:</p>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-gold text-[6px]"></i> <strong>Full Name</strong> — to identify you and personalize communication</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-gold text-[6px]"></i> <strong>Phone Number</strong> — to contact you regarding your inquiry</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-gold text-[6px]"></i> <strong>Email Address</strong> — for follow-up communication (if provided)</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-circle text-gold text-[6px]"></i> <strong>Event Details</strong> — event type, date, guest count, and special requirements</li>
+                    </ul>
+                </div>
+
+                <div class="reveal-element bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-100">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">2</span> How We Use Your Information</h2>
+                    <ul class="space-y-2 text-sm text-slate-600">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold text-xs mt-1"></i> To respond to your venue booking and event inquiries</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold text-xs mt-1"></i> To coordinate venue visits and event planning</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold text-xs mt-1"></i> To send you relevant updates about your booking (with your consent)</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold text-xs mt-1"></i> To improve our website and services based on user interactions</li>
+                    </ul>
+                </div>
+
+                <div class="reveal-element bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-100">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">3</span> Data Storage</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">Your form submission data is securely stored via <strong>Google Sheets</strong> through Google Apps Script. This data is used exclusively by Tisha Resort management for responding to your inquiry and is not shared with any third party for marketing purposes.</p>
+                </div>
+
+                <div class="reveal-element bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-100">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">4</span> WhatsApp Communication</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">When you submit an inquiry, your message may be redirected to our WhatsApp business number for faster communication. This is done via the WhatsApp Web API and your data is shared only with the Tisha Resort team. We do not store WhatsApp chat data on our website.</p>
+                </div>
+
+                <div class="reveal-element bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-100">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">5</span> Cookies & Third-Party Services</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">Our website uses some third-party services which may collect anonymous usage data.</p>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-4">We do not use cookies for tracking or advertising purposes. These third-party services may have their own privacy policies.</p>
+                </div>
+
+                <div class="reveal-element bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-100">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">6</span> Data Security</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">We take reasonable measures to protect your personal information. However, no method of transmission over the Internet is 100% secure. We cannot guarantee absolute security of your data but commit to using industry-standard practices to protect it.</p>
+                </div>
+
+                <div class="reveal-element bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-100">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">7</span> Your Rights</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">You have the right to:</p>
+                    <ul class="space-y-2 text-sm text-slate-600 mt-3">
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold text-xs mt-1"></i> Request access to or deletion of your personal data</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold text-xs mt-1"></i> Opt out of any future communications</li>
+                        <li class="flex items-start gap-2"><i class="fa-solid fa-check text-gold text-xs mt-1"></i> Request correction of any inaccurate information</li>
+                    </ul>
+                    <p class="text-slate-600 text-sm leading-relaxed mt-3">To exercise these rights, please contact us at <a href="mailto:info@tisharesort.com" class="text-gold hover:underline">info@tisharesort.com</a> or call <a href="tel:+919267675757" class="text-gold hover:underline">+91 92676 75757</a>.</p>
+                </div>
+
+                <div class="reveal-element bg-slate-50 rounded-lg p-6 md:p-8 border border-slate-100">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">8</span> Changes to This Policy</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed">We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised "Last Updated" date. We encourage you to review this policy periodically.</p>
+                </div>
+
+                <div class="reveal-element bg-champagne-100 rounded-lg p-6 md:p-8 border border-champagne-300">
+                    <h2 class="font-serif text-xl md:text-2xl font-bold text-navy mb-4 flex items-center gap-3"><span class="w-8 h-8 rounded-full gold-gradient-bg text-navy flex items-center justify-center text-sm font-bold">9</span> Contact Us</h2>
+                    <p class="text-slate-600 text-sm leading-relaxed mb-4">If you have any questions about this Privacy Policy, please contact us:</p>
+                    <div class="space-y-2 text-sm text-slate-700">
+                        <p><strong>Tisha Resort & Banquet</strong></p>
+                        <p><i class="fa-solid fa-location-dot text-gold mr-2"></i>Noida Expressway, 770, Inner Ring Road, Behind Saura Hotel, Mahua Khera, Agra, UP 282006</p>
+                        <p><i class="fa-solid fa-phone text-gold mr-2"></i><a href="tel:+919267675757" class="hover:text-gold">+91 92676 75757</a> | <a href="tel:+918392855855" class="hover:text-gold">+91 83928 55855</a></p>
+                        <p><i class="fa-solid fa-envelope text-gold mr-2"></i><a href="mailto:info@tisharesort.com" class="hover:text-gold">info@tisharesort.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 pt-20 pb-8 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5"><div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-gold blur-3xl"></div><div class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-gold blur-3xl"></div></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div><a href="index.html" class="inline-block mb-6"><img src="tisha_logo.jpeg" alt="Tisha Resort" class="h-14 rounded-sm"></a><p class="text-sm leading-relaxed">Agra's premier private event venue for weddings, corporate events, and celebrations.</p></div>
+                <div><h4 class="text-white font-serif text-lg font-bold mb-6">Quick Links</h4><ul class="space-y-3 text-sm"><li><a href="index.html" class="hover:text-gold transition-colors">Home</a></li><li><a href="index.html#venues" class="hover:text-gold transition-colors">Our Venues</a></li><li><a href="index.html#weddings" class="hover:text-gold transition-colors">Weddings</a></li><li><a href="gallery.html" class="hover:text-gold transition-colors">Photo Gallery</a></li><li><a href="about.html" class="hover:text-gold transition-colors">About Us</a></li></ul></div>
+                <div><h4 class="text-white font-serif text-lg font-bold mb-6">Services</h4><ul class="space-y-3 text-sm"><li><a href="index.html#weddings" class="hover:text-gold transition-colors">Destination Weddings</a></li><li><a href="index.html#events" class="hover:text-gold transition-colors">Corporate Events</a></li><li><a href="index.html#events" class="hover:text-gold transition-colors">Birthday Celebrations</a></li><li><a href="index.html#events" class="hover:text-gold transition-colors">Poolside Events</a></li></ul></div>
+                <div><h4 class="text-white font-serif text-lg font-bold mb-6">Contact</h4><ul class="space-y-4 text-sm"><li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-gold mt-1"></i><span>Noida Expressway, 770, Mahua Khera, Agra, UP 282006</span></li><li class="flex items-center gap-3"><i class="fa-solid fa-phone text-gold"></i><div><a href="tel:+919267675757" class="hover:text-gold block">+91 92676 75757</a><a href="tel:+918392855855" class="hover:text-gold">+91 83928 55855</a></div></li><li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-gold"></i><a href="mailto:info@tisharesort.com" class="hover:text-gold">info@tisharesort.com</a></li></ul>
+                    <div class="flex items-center gap-4 mt-6"><a href="https://www.facebook.com/p/Tisha-Resort-61568994922121/" target="_blank" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com/tisharesort.official/" target="_blank" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/919267675757" target="_blank" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-whatsapp"></i></a></div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-xs text-slate-500">&copy; 2026 Tisha Resort & Banquet, Agra. All Rights Reserved.</p>
+                <div class="flex gap-6 text-xs text-slate-500"><a href="privacy.html" class="text-gold">Privacy Policy</a><a href="terms.html" class="hover:text-gold transition-colors">Terms & Conditions</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+919267675757" aria-label="Call" class="fixed bottom-6 left-6 z-30 lg:hidden w-12 h-12 rounded-full bg-navy text-gold flex items-center justify-center shadow-2xl border border-gold hover:-translate-y-1 transition-transform"><i class="fa-solid fa-phone text-lg"></i></a>
+    <a href="https://wa.me/919267675757?text=Hi%20Tisha%20Resort%20Agra%2C%20I%20would%20like%20to%20inquire%20about%20booking." target="_blank" aria-label="WhatsApp" class="fixed bottom-6 right-6 z-30 w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:-translate-y-1 transition-transform hover:scale-105"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+
+    <script>
+        const menuBtn=document.getElementById('menu-btn'),menuIcon=document.getElementById('menu-icon'),mobileMenu=document.getElementById('mobile-menu'),scrollProgress=document.getElementById('scroll-progress');
+        function toggleMobileMenu(){const o=mobileMenu.classList.contains('opacity-100');if(o){mobileMenu.classList.remove('opacity-100');mobileMenu.classList.add('opacity-0','pointer-events-none');menuIcon.className='fa-solid fa-bars text-2xl';document.body.classList.remove('overflow-hidden')}else{mobileMenu.classList.remove('opacity-0','pointer-events-none');mobileMenu.classList.add('opacity-100');menuIcon.className='fa-solid fa-xmark text-2xl';document.body.classList.add('overflow-hidden')}}
+        menuBtn.addEventListener('click',toggleMobileMenu);
+        window.addEventListener('scroll',()=>{const s=window.scrollY,d=document.documentElement.scrollHeight-window.innerHeight;scrollProgress.style.width=`${(s/d)*100}%`});
+        const ro=new IntersectionObserver((e,o)=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('active');o.unobserve(en.target)}})},{threshold:0.1});
+        document.querySelectorAll('.reveal-element').forEach(el=>ro.observe(el));
+    </script>
+</body>
+</html>

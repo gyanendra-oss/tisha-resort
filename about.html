@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Tisha Resort Agra - Premium Event Venue</title>
+    <meta name="description" content="Learn more about Tisha Resort & Banquet, Agra's premier destination for weddings, corporate events, and grand celebrations. Discover our story and spaces.">
+    <link rel="canonical" href="https://tisharesort.com/about.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config={theme:{extend:{colors:{navy:{DEFAULT:'#0F172A',50:'#F8FAFC',100:'#F1F5F9',200:'#E2E8F0',300:'#CBD5E1',400:'#94A3B8',500:'#64748B',600:'#475569',700:'#334155',800:'#1E293B',900:'#0F172A',950:'#020617'},gold:{DEFAULT:'#C8A96B',50:'#FCFAF5',100:'#FAF4E8',200:'#F3E5CD',300:'#EAD1A6',400:'#DDBD80',500:'#C8A96B',600:'#B29153',700:'#91723B',800:'#705427',900:'#4F3818'},champagne:{DEFAULT:'#F5F0E8',50:'#FDFCFB',100:'#FAF8F4',200:'#F5F0E8',300:'#EDE4D6',400:'#E1D3BF',500:'#C8B296',600:'#AA9072',700:'#8C7053',800:'#6D5239',900:'#4E3A28'}},fontFamily:{serif:['Playfair Display','serif'],sans:['Inter','sans-serif']},animation:{'fade-in-up':'fadeInUp 0.8s ease-out forwards','fade-in':'fadeIn 1s ease-out forwards'},keyframes:{fadeInUp:{'0%':{opacity:'0',transform:'translateY(30px)'},'100%':{opacity:'1',transform:'translateY(0)'}},fadeIn:{'0%':{opacity:'0'},'100%':{opacity:'1'}}}}}}
+    </script>
+    <style>
+        .gold-gradient-bg{background:linear-gradient(135deg,#EAD1A6 0%,#C8A96B 50%,#91723B 100%)}
+        .gold-text-gradient{-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-image:linear-gradient(135deg,#F3E5CD 0%,#C8A96B 50%,#91723B 100%)}
+        .reveal-element{opacity:0;transform:translateY(40px);transition:all 1s cubic-bezier(0.16,1,0.3,1)}.reveal-element.active{opacity:1;transform:translateY(0)}
+        ::-webkit-scrollbar{width:8px}::-webkit-scrollbar-track{background:#0F172A}::-webkit-scrollbar-thumb{background:#C8A96B;border-radius:4px}::-webkit-scrollbar-thumb:hover{background:#B29153}
+    </style>
+</head>
+<body class="bg-white text-navy font-sans antialiased overflow-x-hidden">
+
+    <div id="scroll-progress" class="fixed top-0 left-0 h-1 gold-gradient-bg z-50 transition-all duration-100" style="width:0%"></div>
+
+    <!-- Sticky Header -->
+    <header class="bg-navy py-4 px-4 md:px-12 shadow-xl sticky top-0 z-40">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group"><img src="tisha_logo.jpeg" alt="Tisha Resort Logo" class="h-12 md:h-14 rounded-sm"></a>
+            <nav class="hidden lg:flex items-center space-x-8">
+                <a href="index.html" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Home</a>
+                <a href="index.html#venues" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Venues</a>
+                <a href="index.html#weddings" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Weddings</a>
+                <a href="index.html#events" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Events</a>
+                <a href="gallery.html" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Gallery</a>
+                <a href="about.html" class="text-sm font-semibold tracking-wider text-gold transition-colors duration-300 uppercase">About</a>
+                <a href="index.html#contact" class="text-sm font-semibold tracking-wider text-white hover:text-gold transition-colors duration-300 uppercase">Contact</a>
+            </nav>
+            <div class="hidden lg:block"><a href="index.html#contact" class="gold-gradient-bg hover:opacity-90 text-navy font-bold px-6 py-2.5 rounded-sm shadow-lg tracking-widest text-xs uppercase transition-all duration-300 hover:-translate-y-0.5">Enquire Now</a></div>
+            <button id="menu-btn" aria-label="Toggle menu" class="lg:hidden text-white hover:text-gold transition-colors focus:outline-none z-50"><i class="fa-solid fa-bars text-2xl" id="menu-icon"></i></button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-navy bg-opacity-95 lg:hidden flex flex-col justify-center items-center text-center space-y-6 opacity-0 pointer-events-none transition-all duration-300 z-40">
+            <img src="tisha_logo.jpeg" alt="Tisha Resort" class="h-16 mb-4 rounded-sm">
+            <a href="index.html" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Home</a>
+            <a href="index.html#venues" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Venues</a>
+            <a href="index.html#weddings" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Weddings</a>
+            <a href="index.html#events" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Events</a>
+            <a href="gallery.html" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Gallery</a>
+            <a href="about.html" onclick="toggleMobileMenu()" class="text-xl font-serif text-gold tracking-widest uppercase">About</a>
+            <a href="index.html#contact" onclick="toggleMobileMenu()" class="text-xl font-serif text-white hover:text-gold tracking-widest uppercase">Contact</a>
+            <a href="index.html#contact" class="gold-gradient-bg text-navy font-bold px-8 py-3 rounded-sm shadow-xl tracking-widest text-sm uppercase mt-4">Enquire Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="relative py-24 md:py-32 bg-navy text-white overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-30" style="background-image:url('tisha resort img.jpeg')"></div>
+        <div class="absolute inset-0 bg-gradient-to-t from-navy-950 to-transparent z-0"></div>
+        <div class="absolute inset-0 bg-navy/40 z-0"></div>
+        <div class="max-w-4xl mx-auto text-center relative z-10 px-4">
+            <h1 class="font-serif text-4xl md:text-5xl font-bold mb-4 animate-fade-in-up">About Tisha Resort</h1>
+            <div class="w-24 h-1 gold-gradient-bg mx-auto mb-4 animate-fade-in-up" style="animation-delay: 0.1s"></div>
+            <nav class="text-sm text-slate-300 animate-fade-in-up" style="animation-delay: 0.2s">
+                <a href="index.html" class="hover:text-gold transition-colors">Home</a>
+                <span class="mx-2">/</span>
+                <span class="text-gold">About Us</span>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Our Story & Vision -->
+    <section class="py-24 px-4 bg-white relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="reveal-element">
+                    <span class="text-gold font-bold tracking-[0.2em] text-xs uppercase mb-2 block">Our Story</span>
+                    <h2 class="font-serif text-3xl md:text-4xl font-bold text-navy mb-6">Agra's Premier Private Event Destination</h2>
+                    <p class="text-slate-600 text-base leading-relaxed mb-6">Located in the historic city of Agra, Tisha Resort & Banquet was established with a singular vision: to provide a breathtaking, flexible, and premium canvas for life's most important celebrations.</p>
+                    <p class="text-slate-600 text-base leading-relaxed mb-6">We understand that every event is unique. Unlike traditional hotels that mandate their own catering and decor, we offer a dedicated private event venue where you have the freedom to bring your own vendors. This ensures your celebration is exactly as you envisioned it, without compromises.</p>
+                    <p class="text-slate-600 text-base leading-relaxed">From the expansive Grand Lawn that can host up to 900 guests, to our intimate Poolside Venue and elegant AC Banquet Hall, every space has been designed to offer luxury, comfort, and grandeur.</p>
+                </div>
+                <div class="grid grid-cols-2 gap-4 reveal-element" style="transition-delay: 0.2s">
+                    <div class="space-y-4">
+                        <img src="image/IMG_20260617_202406.jpg" alt="Wedding Setup" class="w-full h-64 object-cover rounded-md shadow-lg">
+                        <img src="image/IMG_20260617_202618.jpg" alt="Poolside Event" class="w-full h-48 object-cover rounded-md shadow-lg">
+                    </div>
+                    <div class="space-y-4 pt-8">
+                        <img src="image/IMG_20260617_201543.jpg" alt="Banquet Hall" class="w-full h-48 object-cover rounded-md shadow-lg">
+                        <img src="image/IMG_20260617_201758.jpg" alt="Lawn Setup" class="w-full h-64 object-cover rounded-md shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 px-4 bg-slate-50 relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16 reveal-element">
+                <span class="text-gold font-bold tracking-[0.2em] text-xs uppercase mb-2 block">The Tisha Advantage</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-navy mb-4">Why Choose Us</h2>
+                <div class="w-24 h-1 gold-gradient-bg mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:border-gold/30 hover:shadow-xl transition-all duration-300 reveal-element">
+                    <div class="w-14 h-14 rounded-full bg-champagne flex items-center justify-center text-gold text-2xl mb-6"><i class="fa-solid fa-tree"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3">Spacious Green Lawn</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Our beautifully manicured grand lawn comfortably accommodates up to 900 guests, offering a lush, open-air setting for majestic weddings and receptions.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:border-gold/30 hover:shadow-xl transition-all duration-300 reveal-element" style="transition-delay: 0.1s">
+                    <div class="w-14 h-14 rounded-full bg-champagne flex items-center justify-center text-gold text-2xl mb-6"><i class="fa-solid fa-water"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3">Poolside Venue</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">An exquisite poolside area perfect for intimate gatherings, Haldi, Mehendi, cocktail parties, and vibrant evening celebrations under the stars.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:border-gold/30 hover:shadow-xl transition-all duration-300 reveal-element" style="transition-delay: 0.2s">
+                    <div class="w-14 h-14 rounded-full bg-champagne flex items-center justify-center text-gold text-2xl mb-6"><i class="fa-solid fa-building-columns"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3">AC Banquet Hall</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">A fully air-conditioned, elegant indoor space ideal for corporate conferences, elegant dinners, and celebrations during any season, seating up to 300 guests.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:border-gold/30 hover:shadow-xl transition-all duration-300 reveal-element">
+                    <div class="w-14 h-14 rounded-full bg-champagne flex items-center justify-center text-gold text-2xl mb-6"><i class="fa-solid fa-handshake"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3">Flexible Vendor Policy</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">We provide the stunning backdrop; you bring the vision. You have the complete freedom to bring your own caterers, decorators, and entertainment.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:border-gold/30 hover:shadow-xl transition-all duration-300 reveal-element" style="transition-delay: 0.1s">
+                    <div class="w-14 h-14 rounded-full bg-champagne flex items-center justify-center text-gold text-2xl mb-6"><i class="fa-solid fa-car"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3">Ample Parking</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">Convenience for your guests is our priority. Tisha Resort features extensive, secure parking facilities to ensure a hassle-free arrival experience for large gatherings.</p>
+                </div>
+
+                <div class="bg-white p-8 rounded-lg shadow-md border border-slate-100 hover:border-gold/30 hover:shadow-xl transition-all duration-300 reveal-element" style="transition-delay: 0.2s">
+                    <div class="w-14 h-14 rounded-full bg-champagne flex items-center justify-center text-gold text-2xl mb-6"><i class="fa-solid fa-lock"></i></div>
+                    <h3 class="font-serif text-xl font-bold text-navy mb-3">Privacy & Exclusivity</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">As a dedicated event venue rather than a busy public hotel, your celebration enjoys the privacy and exclusive attention it deserves without outside interruptions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="py-20 px-4 bg-navy text-white relative overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image:url('image/IMG_20260617_202209.jpg')"></div>
+        <div class="max-w-7xl mx-auto relative z-10 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="reveal-element">
+                <span class="text-gold text-4xl md:text-6xl font-bold mb-2 font-serif block">900+</span>
+                <span class="text-slate-300 text-xs md:text-sm tracking-widest uppercase font-semibold">Lawn Capacity</span>
+            </div>
+            <div class="reveal-element" style="transition-delay: 0.1s">
+                <span class="text-gold text-4xl md:text-6xl font-bold mb-2 font-serif block">3</span>
+                <span class="text-slate-300 text-xs md:text-sm tracking-widest uppercase font-semibold">Event Spaces</span>
+            </div>
+            <div class="reveal-element" style="transition-delay: 0.2s">
+                <span class="text-gold text-4xl md:text-6xl font-bold mb-2 font-serif block">4</span>
+                <span class="text-slate-300 text-xs md:text-sm tracking-widest uppercase font-semibold">Guest Rooms</span>
+            </div>
+            <div class="reveal-element" style="transition-delay: 0.3s">
+                <span class="text-gold text-4xl md:text-6xl font-bold mb-2 font-serif block">100%</span>
+                <span class="text-slate-300 text-xs md:text-sm tracking-widest uppercase font-semibold">Customizable</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-24 px-4 bg-champagne-100 relative text-center">
+        <div class="max-w-3xl mx-auto reveal-element">
+            <h2 class="font-serif text-3xl md:text-5xl font-bold text-navy mb-6">Ready to plan your event?</h2>
+            <p class="text-slate-600 mb-8">Contact us today to schedule a venue visit or inquire about availability and pricing for your upcoming celebration.</p>
+            <a href="index.html#contact" class="inline-block gold-gradient-bg hover:opacity-90 text-navy font-bold py-3.5 px-8 rounded-sm tracking-wider uppercase text-sm shadow-xl transition-all duration-300 hover:-translate-y-0.5">Contact Us Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-950 text-slate-400 pt-20 pb-8 px-4 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5"><div class="absolute top-0 right-0 w-96 h-96 rounded-full bg-gold blur-3xl"></div><div class="absolute bottom-0 left-0 w-96 h-96 rounded-full bg-gold blur-3xl"></div></div>
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div><a href="index.html" class="inline-block mb-6"><img src="tisha_logo.jpeg" alt="Tisha Resort" class="h-14 rounded-sm"></a><p class="text-sm leading-relaxed">Agra's premier private event venue for weddings, corporate events, and celebrations.</p></div>
+                <div><h4 class="text-white font-serif text-lg font-bold mb-6">Quick Links</h4><ul class="space-y-3 text-sm"><li><a href="index.html" class="hover:text-gold transition-colors">Home</a></li><li><a href="index.html#venues" class="hover:text-gold transition-colors">Our Venues</a></li><li><a href="index.html#weddings" class="hover:text-gold transition-colors">Weddings</a></li><li><a href="gallery.html" class="hover:text-gold transition-colors">Photo Gallery</a></li><li><a href="about.html" class="text-gold">About Us</a></li></ul></div>
+                <div><h4 class="text-white font-serif text-lg font-bold mb-6">Services</h4><ul class="space-y-3 text-sm"><li><a href="index.html#weddings" class="hover:text-gold transition-colors">Destination Weddings</a></li><li><a href="index.html#events" class="hover:text-gold transition-colors">Corporate Events</a></li><li><a href="index.html#events" class="hover:text-gold transition-colors">Birthday Celebrations</a></li><li><a href="index.html#events" class="hover:text-gold transition-colors">Poolside Events</a></li></ul></div>
+                <div><h4 class="text-white font-serif text-lg font-bold mb-6">Contact</h4><ul class="space-y-4 text-sm"><li class="flex items-start gap-3"><i class="fa-solid fa-location-dot text-gold mt-1"></i><span>Noida Expressway, 770, Mahua Khera, Agra, UP 282006</span></li><li class="flex items-center gap-3"><i class="fa-solid fa-phone text-gold"></i><div><a href="tel:+919267675757" class="hover:text-gold block">+91 92676 75757</a><a href="tel:+918392855855" class="hover:text-gold">+91 83928 55855</a></div></li><li class="flex items-center gap-3"><i class="fa-solid fa-envelope text-gold"></i><a href="mailto:info@tisharesort.com" class="hover:text-gold">info@tisharesort.com</a></li></ul>
+                    <div class="flex items-center gap-4 mt-6"><a href="https://www.facebook.com/p/Tisha-Resort-61568994922121/" target="_blank" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-facebook-f"></i></a><a href="https://www.instagram.com/tisharesort.official/" target="_blank" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-instagram"></i></a><a href="https://wa.me/919267675757" target="_blank" class="w-10 h-10 rounded-full border border-slate-700 flex items-center justify-center text-slate-400 hover:text-gold hover:border-gold transition-all"><i class="fa-brands fa-whatsapp"></i></a></div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+                <p class="text-xs text-slate-500">&copy; 2026 Tisha Resort & Banquet, Agra. All Rights Reserved.</p>
+                <div class="flex gap-6 text-xs text-slate-500"><a href="privacy.html" class="hover:text-gold transition-colors">Privacy Policy</a><a href="terms.html" class="hover:text-gold transition-colors">Terms & Conditions</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="tel:+919267675757" aria-label="Call" class="fixed bottom-6 left-6 z-30 lg:hidden w-12 h-12 rounded-full bg-navy text-gold flex items-center justify-center shadow-2xl border border-gold hover:-translate-y-1 transition-transform"><i class="fa-solid fa-phone text-lg"></i></a>
+    <a href="https://wa.me/919267675757?text=Hi%20Tisha%20Resort%20Agra%2C%20I%20would%20like%20to%20inquire%20about%20booking." target="_blank" aria-label="WhatsApp" class="fixed bottom-6 right-6 z-30 w-12 h-12 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-2xl hover:-translate-y-1 transition-transform hover:scale-105"><i class="fa-brands fa-whatsapp text-2xl"></i></a>
+
+    <script>
+        const menuBtn=document.getElementById('menu-btn'),menuIcon=document.getElementById('menu-icon'),mobileMenu=document.getElementById('mobile-menu'),scrollProgress=document.getElementById('scroll-progress');
+        function toggleMobileMenu(){const o=mobileMenu.classList.contains('opacity-100');if(o){mobileMenu.classList.remove('opacity-100');mobileMenu.classList.add('opacity-0','pointer-events-none');menuIcon.className='fa-solid fa-bars text-2xl';document.body.classList.remove('overflow-hidden')}else{mobileMenu.classList.remove('opacity-0','pointer-events-none');mobileMenu.classList.add('opacity-100');menuIcon.className='fa-solid fa-xmark text-2xl';document.body.classList.add('overflow-hidden')}}
+        menuBtn.addEventListener('click',toggleMobileMenu);
+        window.addEventListener('scroll',()=>{const s=window.scrollY,d=document.documentElement.scrollHeight-window.innerHeight;scrollProgress.style.width=`${(s/d)*100}%`});
+        const ro=new IntersectionObserver((e,o)=>{e.forEach(en=>{if(en.isIntersecting){en.target.classList.add('active');o.unobserve(en.target)}})},{threshold:0.1});
+        document.querySelectorAll('.reveal-element').forEach(el=>ro.observe(el));
+    </script>
+</body>
+</html>
